@@ -55,7 +55,7 @@ function getTasks() {
 function addTask(e) {
     if (taskInput.value === '') {
         alert('Add a task');
-    }
+    }else {
     // Create li elements
     const li = document.createElement('li');
     // Add class
@@ -77,6 +77,7 @@ function addTask(e) {
     // Clear input
     taskInput.value = '';
     e.preventDefault();
+    }
 }
 
 // Store task
